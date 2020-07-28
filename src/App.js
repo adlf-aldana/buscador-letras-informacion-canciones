@@ -1,9 +1,10 @@
 import React, { Fragment } from 'react';
+import Formulario from './components/Formulario';
 
 function App() {
   return (
     <Fragment>
-      <h1>App Musica</h1>
+      <Formulario />
     </Fragment>
   );
 }
