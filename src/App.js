@@ -1,6 +1,8 @@
 import React, { Fragment, useState, useEffect } from 'react';
 import Formulario from './components/Formulario';
 import Axios from 'axios';
+import Letra from './components/Letra';
+
 
 
 function App() {
@@ -24,6 +26,17 @@ function App() {
   return (
     <Fragment>
       <Formulario setbuscarletra={setbuscarletra} />
+
+      <div className="container m-5">
+        <div className="row">
+          <div className="col-md-6">
+            
+          </div>
+          <div className="col-md-6">
+            <Letra letra={letra} />
+          </div>
+        </div>
+      </div>
     </Fragment>
   );
 }
